@@ -47,7 +47,7 @@ isTrue(userInput2);
 // not
 
 
-//addOne
+//addOne continue research
 var userInput4;
 function addOne(c) {
     if (c < 0) {
