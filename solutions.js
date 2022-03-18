@@ -21,45 +21,84 @@
  * concat
  */
 // isTrue
-var userInput1 = 1 === 1;
-
-function isTrue(a) {
-    if (a === true) {
+function isTrue(n) {
+    if (n === true) {
         return  true;
     } else {
         return false;
     }
 };
-isTrue(userInput1);
+
 
 // isFalse
-var userInput2 = 1 === 1;
-
-function isFalse(b) {
-    if (b === false) {
+function isFalse(n) {
+    if (n === false) {
         return  true;
     } else {
         return false;
     }
 };
-isTrue(userInput2);
 
-// not
-
-
-//addOne continue research
-var userInput4;
-function addOne(c) {
-    if (c < 0) {
-        return c + 1;
-    } else if ( c > 0) {
-        return c + 1;
-    } else if ( c === "-5") {
-        return
-    }
-    return userInput4;
+//addOne
+function addOne(n) {
+    return parseInt(n) + 1;
 };
 
-addOne(-5);
+// isEven
+function isEven(n) {
+    if (((parseInt(n)/2) - Math.floor(parseInt(n)/2)) === 0) {
+        return true
+    } else {
+        return false
+    }
+}
 
+// isEqual
+function isEqual(n) {
+    if (parseInt(n) === parseInt(n)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
+// concat
+function concat(n, m) {
+    return n.toString() + m.toString()
+}
+
+// and
+function and(n,m) {
+    if (n.toString() || m.toString()) {
+        return false;
+    } else  {
+        return false;
+    }
+}
+
+// or
+function or(n,m) {
+    if (n.toString() && m.toString()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// isIdentical
+function isIdentical(n, m) {
+    if (n.toString() === m.toString() || parseInt(n) === parseInt(n) ) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+// not
+function not(n) {
+    if (n >= 0) {
+        return false;
+    } else {
+        return false;
+    }
+}
